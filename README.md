@@ -44,6 +44,7 @@ The data was collected from [Kaggle](https://www.kaggle.com/). This [dataset](ht
 - Customers column was dropped, because for now there's no information about the amount of customers six weeks into the future. 
 - The NaN's in CompetitionDistance were replaced by 3 times the maximum CompetitionDistance in the dataset, because the observations with NaN's are likely stores that are too far, which means there's no competition.
 - Some new features were created in order to best describe the problem: 
+
 | New Feature | Definition |
 |---|---|
 | day/week_of_year/year_week/month/year | day/week_of_year/year_week/month/year extracted from 'date' column.|
@@ -78,47 +79,47 @@ The data was collected from [Kaggle](https://www.kaggle.com/). This [dataset](ht
 - [Git](https://git-scm.com/) and [Github](https://github.com/).
 - [Exploratory Data Analysis (EDA)](https://towardsdatascience.com/exploratory-data-analysis-8fc1cb20fd15). 
 - [Techniques for Feature Selection](https://machinelearningmastery.com/feature-selection-with-real-and-categorical-data/).
-- [Regression Algorithms](https://towardsdatascience.com/7-of-the-most-commonly-used-regression-algorithms-and-how-to-choose-the-right-one-fc3c8890f9e3).
+- [Regression Algorithms (Linear and Lasso Regression; Random Forest, XGBoost and LGBM Regressors)](https://towardsdatascience.com/7-of-the-most-commonly-used-regression-algorithms-and-how-to-choose-the-right-one-fc3c8890f9e3).
 - [Cross-Validation Methods](https://medium.com/@soumyachess1496/cross-validation-in-time-series-566ae4981ce4), [Hyperparameter Optimization](https://towardsdatascience.com/7-hyperparameter-optimization-techniques-every-data-scientist-should-know-12cdebe713da) and [Algorithms Performance Metrics (RMSE, MAE, MAPE, R2)](https://machinelearningmastery.com/regression-metrics-for-machine-learning/#:~:text=There%20are%20three%20error%20metrics,Mean%20Absolute%20Error%20(MAE)).
 
-# 5. **Business Insights**
+# 5. **Top Business Insights**
 
- - ### 1st - Properties that possess waterfront view are, on average, 212.38% more expensive in comparison to the ones that do not have such feature.
+ - ### 1st - Stores with basic assortment level are the ones that sell more.
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/66283452/191962514-70edbf52-c08b-4aa1-9d46-9db3ebd39eca.png" alt="drawing" width="750"/>
+  <img src="https://user-images.githubusercontent.com/66283452/194964237-f82c668c-3ea3-4373-b562-d18ab0a1f6f4.png" alt="drawing" width="750"/>
 </p>
 
-#### **Usage**: House Rocket could focus on buying and selling waterfront view properties, since the profit will be higher in absolut values. 
 --- 
-- ### 2nd - Properties that do not have a basement are, on average, 27.71% cheaper in comparison to the ones that have such feature.
+- ### 2nd - Stores with higher number of close competitors sell more.
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/66283452/191962495-7f9303a2-8c91-47ab-9940-dc984cc0fbc5.png" alt="drawing" width="750"/>
+  <img src="https://user-images.githubusercontent.com/66283452/194964211-f1215de3-795c-4c2b-9d73-071b50a3cd96.png" alt="drawing" width="750"/>
 </p>
 
-#### **Usage**: House Rocket could look to buy properties without a basement that have the potential to possess one. Therefore these properties can be sold for a lot higher price. 
 ---
-- ### 3rd - Properties with good views are, on average, 1.89 times more expensive than the ones with not so good views
+- ### 3rd - Easter Holiday has the highest average sales, in comparison to other periods.
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/66283452/191962502-adfbcb5e-2261-46f3-8d1d-1bb8d2281405.png" alt="drawing" width="750"/>
+  <img src="https://user-images.githubusercontent.com/66283452/194964219-b73605bc-87f0-4b0e-9cf9-8026d32d49d5.png" alt="drawing" width="750"/>
 </p>
 
-#### **Usage**: House Rocket could focus on buying and selling properties with good views, since the profit will be higher in absolut values.
 ---
-- ### 4th - Regions bordering Lake Washington produce, on average, 36.23% more profit in comparison to other regions.
+- ### 4th - Stores sell less during the second semester of each year.
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/66283452/192010463-9a0d6027-c6fa-4b4c-9e49-a539873a6ba2.png" alt="drawing" width="750"/>
+  <img src="https://user-images.githubusercontent.com/66283452/194964226-54bbb2b2-424e-4128-b958-b82ded2581d5.png" alt="drawing" width="750"/>
 </p>
 
-#### **Usage**: House Rocket could focus on buying and selling properties around Lake Washington, since the profit will be higher in absolut values.
 ---
-- ### 5th - Properties with the lowest prices (on average) were built from 1941 to 1983.
+- ### 5th - Stores Sell more after the 10th day of each month.
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/66283452/191962508-06aaa6af-a466-4181-8d23-e0e1ca88548f.png" alt="drawing" width="750"/>
+  <img src="https://user-images.githubusercontent.com/66283452/194964232-b28632ac-2e6d-4e5b-a302-1c5f2c533d3d.png" alt="drawing" width="750"/>
 </p>
 
-#### **Usage**: House Rocket would have higher profits buying and selling properties built from the mid 1980's upwards, as well as the ones built from 1900 to 1940.
+# 6. **Machine Learning Models**
 
-# 6. **Financial Results**
+
+
+
+
+# 7. **Model Deployment and Financial Results**
 
 <p align="justify"> Three interesting metrics to evaluate the financial performance for this solution is the profit mean and median (grouped by ad_season, zipcode and ad_season with zipcode), as well as the total profit. This in-depth information can be found in <a href="https://github.com/brunodifranco/project-house-rocket-insights/tree/main/financial-results">here</a>. As for the profit for each property it can be checked in the <a href="https://brunodifranco-house-rocket-app-house-rocket-app-4dn0re.streamlitapp.com/">House Rocket Cloud App</a>, where filters can also be applied for better visualization. </p>
 
@@ -132,11 +133,11 @@ The data was collected from [Kaggle](https://www.kaggle.com/). This [dataset](ht
 | Profit Mean | 45,337.26 |
 | Profit Median | 39,995.00 |
 | Min Profit | 8,217.50 |
-| Max Profit | 350,036.80 |
- 
+| Max Profit | 350,036.80 | 
+
 </div>
 
-# 7. **Conclusion**
+# 8. **Conclusion**
 In this project the two main objectives were accomplished:
 
  - A feasible solution was found for both business problems, leading to profitable results.
@@ -144,7 +145,7 @@ In this project the two main objectives were accomplished:
 
  We also managed to deliver tables with in-depth financial results, as well as buy and sell suggestion tables. All this information can be filtered by using the [House Rocket Cloud App](https://brunodifranco-house-rocket-app-house-rocket-app-4dn0re.streamlitapp.com/), that also has the five business insights and a interactive Buy Suggestion Map.   
  
-# 8. **Next Steps**
+# 9. **Next Steps**
 <p align="justify"> Further on, this solution could be improved by using <a href="https://www.imsl.com/blog/what-is-regression-model">regression models</a> to determine wheter a property has a good buying price, and for which price it could be bought and sold. Another interesting study would be to produce a market research, so that data about clients could be collected. Then, a <a href="https://machinelearningmastery.com/clustering-algorithms-with-python/">clustering algorithm</a> could be applied to identify what types of property features each group of customers would prefer. </p>
 
 # Contact
