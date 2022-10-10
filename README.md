@@ -55,34 +55,31 @@ The data was collected from [Kaggle](https://www.kaggle.com/). This [dataset](ht
 # 4. **Solution Plan**
 ## 4.1. How was the problem solved?
 
-<p align="justify"> To predict the sales values for each store six weeks in advance a Machine Learning model was applied. To achieve that, the following steps were performed:
+<p align="justify"> To predict sales values for each store (six weeks in advance) a Machine Learning model was applied. To achieve that, the following steps were performed: </p>
 
-- 
+- Understanding the Business Problem
+- Collecting Data
+- Data Cleaning
+- Feature Engineering 
+- Exploratory Data Analysis (EDA)
+- Data Preparation
+- Machine Learning Modeling
+- Model Evaluation
+- Financial Results
+- Model Deployment (Telegram Bot)
 
-## 4.2. What was delivered as a **solution**?
- - Telegram bot 
-    
-    - [Buy Suggestion Table](https://github.com/brunodifranco/project-house-rocket-insights/tree/main/tables/buy-suggestions): Contains buy suggestions and suggested buy prices
-
- - Solution to Problem 2: 
-    - [Sell Suggestion Table](https://github.com/brunodifranco/project-house-rocket-insights/tree/main/tables/sell-sugestions): Contains suggested sell prices and profit
-
- - Financial Results:
-    - [Profit descriptive analysis](https://github.com/brunodifranco/project-house-rocket-insights/blob/main/financial-results/profit-descriptive-analysis.csv)
-    - [Average and median profit grouped by ad_season](https://github.com/brunodifranco/project-house-rocket-insights/blob/main/financial-results/med-avg-profit-by-season.csv)
-    - [Average and median profit grouped by zipcode](https://github.com/brunodifranco/project-house-rocket-insights/blob/main/financial-results/med-avg-profit-by-zipcode.csv)
-    - [Average and median profit grouped by ad_season and zipcode](https://github.com/brunodifranco/project-house-rocket-insights/blob/main/financial-results/med-avg-profit-by-zipcode-season.csv)
-    - [House Rocket Cloud App](https://brunodifranco-house-rocket-app-house-rocket-app-4dn0re.streamlitapp.com/): App deployed using Streamlit Cloud containing all tables (Buy Suggestion Table, Sell Suggestion Table and Financial Results Tables) with filters and a Buy Suggestion Map, as well as data insights.
- 
-
-## 4.3. Used tools
-- [Python 3.9.12](https://www.python.org/downloads/release/python-3912/)
-- [VSCode](https://code.visualstudio.com/)
-- [Jupyter Notebook](https://jupyter.org/)
-- [Streamlit](https://streamlit.io/)
-- [Streamlit Cloud](https://streamlit.io/cloud)
-- [Git](https://git-scm.com/)
-- [Github](https://github.com/)
+ [![image](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/rossmann_project_api_bot)
+  
+## 4.2. Tools and techniques used:
+- [Python 3.9.12](https://www.python.org/downloads/release/python-3912/), [Pandas](https://pandas.pydata.org/), [Matplotlib](https://matplotlib.org/), [Plotly](https://plotly.com/python/) and [Geopandas](https://geopandas.org/en/stable/).
+- [Jupyter Notebook](https://jupyter.org/) and [VSCode](https://code.visualstudio.com/).
+- [Flask](https://flask.palletsprojects.com/en/2.2.x/) and [Python API's](https://realpython.com/api-integration-in-python/).  
+- [Render Cloud](https://render.com/) and [Telegram Bot](https://core.telegram.org/bots/api).
+- [Git](https://git-scm.com/) and [Github](https://github.com/).
+- [Exploratory Data Analysis (EDA)](https://towardsdatascience.com/exploratory-data-analysis-8fc1cb20fd15). 
+- [Techniques for Feature Selection](https://machinelearningmastery.com/feature-selection-with-real-and-categorical-data/).
+- [Regression Algorithms](https://towardsdatascience.com/7-of-the-most-commonly-used-regression-algorithms-and-how-to-choose-the-right-one-fc3c8890f9e3).
+- [Cross-Validation Methods](https://medium.com/@soumyachess1496/cross-validation-in-time-series-566ae4981ce4), [Hyperparameter Optimization](https://towardsdatascience.com/7-hyperparameter-optimization-techniques-every-data-scientist-should-know-12cdebe713da) and [Algorithms Performance Metrics (RMSE, MAE, MAPE, R2)](https://machinelearningmastery.com/regression-metrics-for-machine-learning/#:~:text=There%20are%20three%20error%20metrics,Mean%20Absolute%20Error%20(MAE)).
 
 # 5. **Business Insights**
 
