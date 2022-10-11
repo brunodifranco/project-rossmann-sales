@@ -1,13 +1,11 @@
-<h1 align="center"> NOME DO PROJETO </h1>
-
-<p align="center">Data Science Regression Project</p>
+<h1 align="center"> Creating a bot that predicts Rossmann future sales</h1>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/66283452/191957066-c9699023-eb0e-4e20-9508-869ee8038ecf.jpg" alt="drawing" width="750"/>
+  <img src="https://user-images.githubusercontent.com/66283452/195202224-01bfd468-9f1c-4e83-af60-b101312a98e3.svg" alt="drawing" width="800"/>
 </p>
 
 # 1. **Rossmann and Business Problem**
-<p align="justify"> Rossmann is one of the largest drug store chains in Europe, with operations in Germany, Poland, Hungary, Czech Republic, Turkey, Albania, Kosovo and Spain. Their sales can be influenced by promotions, competition, school and state holidays, seasonality, locality, etc.</p>
+<p align="justify"> Rossmann is one of the largest drug store chains in Europe, with operations in Germany, Poland, Hungary, the Czech Republic, Turkey, Albania, Kosovo and Spain. Their sales can be influenced by promotions, competition, school and state holidays, seasonality, locality, etc.</p>
 
 *Obs: The business problem is fictitious, although both company and data are real.*
 
@@ -64,7 +62,7 @@ The data was collected from [Kaggle](https://www.kaggle.com/). This [dataset](ht
 
 - <b> Data Cleaning </b>: Renaming columns, changing data types and filling NaN's. 
 
-- <p align="justify"> <b> Exploratory Data Analysis (EDA) </b>: Exploring the data in order to obtain business experience, look for useful business insights and find important features for the ML model. The top business insights found are available at <a href="https://github.com/brunodifranco/project-rossmann-sales#5-top-business-insights">5. <b> Top Business Insights </b> </a>. </p>
+- <p align="justify"> <b> Exploratory Data Analysis (EDA) </b>: Exploring the data in order to obtain business experience, look for useful business insights and find important features for the ML model. The top business insights found are available at <a href="https://github.com/brunodifranco/project-rossmann-sales#5-top-business-insights"> Section 5 </a>. </p>
 
 - <b> Feature Engineering </b>: Creating new features from the original ones, so that those could be used in the ML model. 
 
@@ -72,16 +70,16 @@ The data was collected from [Kaggle](https://www.kaggle.com/). This [dataset](ht
 
 - <b> Feature Selection </b>: Selecting the best features to use in the ML model by applying the <a href="https://www.section.io/engineering-education/getting-started-with-boruta-algorithm/">Boruta Algorithm</a>. 
 
-- <b> Machine Learning Modeling </b>: Training Regression Algorithms, using time series cross-validation. The best model was selected to be improved by using Hyperparameter Tuning. More information at <a href="https://github.com/brunodifranco/project-rossmann-sales#6-machine-learning-models">6. <b> Machine Learning Models </b> </a>
+- <p align="justify"> <b> Machine Learning Modeling </b>: Training Regression Algorithms, using time series cross-validation. The best model was selected to be improved via Hyperparameter Tuning. More information at <a href="https://github.com/brunodifranco/project-rossmann-sales#6-machine-learning-models">Section 6 </a>. </p>
 
 - <b> Model Evaluation </b>: Evaluating the model using four metrics: MAE, MAPE, RMSE and R<sup>2</sup>. 
 
-- <b> Financial Results </b>: Translating the statistical model to financial and business performance, so that the ML model could be useful in the real world.
+- <b> Financial Results </b>: Translating the ML model's statistical performance to financial and business performance.
 
-- <b> Model Deployment (Telegram Bot) </b>: Implementation of a Telegram Bot that will give you the prediction of any given available store number. This is the project's <b> Data Science product </b>, and it can be accessed from anywhere. More information at <a href="https://github.com/brunodifranco/project-rossmann-sales#7-model-deployment">7. <b> Model Deployment </b> </a>
+- <p align="justify"> <b> Model Deployment (Telegram Bot) </b>: Implementation of a Telegram Bot that will give you the prediction of any given available store number. This is the project's <b> Data Science Product </b>, and it can be accessed from anywhere. More information at <a href="https://github.com/brunodifranco/project-rossmann-sales#7-model-deployment"> Section 7 </a>. </p>
   
 ## 4.2. Tools and techniques used:
-- [Python 3.9.12](https://www.python.org/downloads/release/python-3912/), [Pandas](https://pandas.pydata.org/), [Matplotlib](https://matplotlib.org/), [Plotly](https://plotly.com/python/) and [Geopandas](https://geopandas.org/en/stable/).
+- [Python 3.9.12](https://www.python.org/downloads/release/python-3912/), [Pandas](https://pandas.pydata.org/), [Matplotlib](https://matplotlib.org/), [Seaborn](https://seaborn.pydata.org/) and [Sklearn](https://scikit-learn.org/stable/).
 - [Jupyter Notebook](https://jupyter.org/) and [VSCode](https://code.visualstudio.com/).
 - [Flask](https://flask.palletsprojects.com/en/2.2.x/) and [Python API's](https://realpython.com/api-integration-in-python/).  
 - [Render Cloud](https://render.com/) and [Telegram Bot](https://core.telegram.org/bots/api).
