@@ -1,6 +1,6 @@
-<h1 align="center">nome do projeto</h1>
+<h1 align="center"> NOME DO PROJETO </h1>
 
-<p align="center">Data Science Full Project</p>
+<p align="center">Data Science Regression Project</p>
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/66283452/191957066-c9699023-eb0e-4e20-9508-869ee8038ecf.jpg" alt="drawing" width="750"/>
@@ -58,16 +58,27 @@ The data was collected from [Kaggle](https://www.kaggle.com/). This [dataset](ht
 
 <p align="justify"> To predict sales values for each store (six weeks in advance) a Machine Learning model was applied. To achieve that, the following steps were performed: </p>
 
-- Understanding the Business Problem
-- Collecting Data
-- Data Cleaning
-- Feature Engineering 
-- Exploratory Data Analysis (EDA)
-- Data Preparation
-- Machine Learning Modeling
-- Model Evaluation
-- Financial Results
-- Model Deployment (Telegram Bot)
+- <b> Understanding the Business Problem </b> : Understanding the reasons why Rossmann's CEO was requiring that task, and plan the solution. 
+
+- <b> Collecting Data </b>: Collecting Rossmann store and sales data from Kaggle.
+
+- <b> Data Cleaning </b>: Renaming columns, changing data types and filling NaN's. 
+
+- <p align="justify"> <b> Exploratory Data Analysis (EDA) </b>: Exploring the data in order to obtain business experience, look for useful business insights and find important features for the ML model. The top business insights found are available at <a href="https://github.com/brunodifranco/project-rossmann-sales#5-top-business-insights">5. <b> Top Business Insights </b> </a>. </p>
+
+- <b> Feature Engineering </b>: Creating new features from the original ones, so that those could be used in the ML model. 
+
+- <b> Data Preparation </b>: Applying <a href="https://www.atoti.io/articles/when-to-perform-a-feature-scaling/">Normalization and Rescaling Techniques</a> in the data, as well as <a href="https://www.geeksforgeeks.org/feature-encoding-techniques-machine-learning/">Enconding Methods</a>. 
+
+- <b> Feature Selection </b>: Selecting the best features to use in the ML model by applying the <a href="https://www.section.io/engineering-education/getting-started-with-boruta-algorithm/">Boruta Algorithm</a>. 
+
+- <b> Machine Learning Modeling </b>: Training Regression Algorithms, using time series cross-validation. The best model was selected to be improved by using Hyperparameter Tuning. More information at <a href="https://github.com/brunodifranco/project-rossmann-sales#6-machine-learning-models">6. <b> Machine Learning Models </b> </a>
+
+- <b> Model Evaluation </b>: Evaluating the model using four metrics: MAE, MAPE, RMSE and R<sup>2</sup>. 
+
+- <b> Financial Results </b>: Translating the statistical model to financial and business performance, so that the ML model could be useful in the real world.
+
+- <b> Model Deployment (Telegram Bot) </b>: Implementation of a Telegram Bot that will give you the prediction of any given available store number. This is the project's <b> Data Science product </b>, and it can be accessed from anywhere. More information at <a href="https://github.com/brunodifranco/project-rossmann-sales#7-model-deployment">7. <b> Model Deployment </b> </a>
   
 ## 4.2. Tools and techniques used:
 - [Python 3.9.12](https://www.python.org/downloads/release/python-3912/), [Pandas](https://pandas.pydata.org/), [Matplotlib](https://matplotlib.org/), [Plotly](https://plotly.com/python/) and [Geopandas](https://geopandas.org/en/stable/).
@@ -113,9 +124,6 @@ The data was collected from [Kaggle](https://www.kaggle.com/). This [dataset](ht
 
 # 6. **Machine Learning Models**
 
-
-
-
 <p align="justify"> This was the most fundamental part of this project, since it's in ML modeling where the sales predictions for each store can be made. Six models were trained, using time series cross-validation: </p>
 
 - Average Model (used as a baseline model)
@@ -142,7 +150,7 @@ The initial performance for all six algorithms are displayed below (sorted by RM
 
 <p align="justify"> Both Linear Regression and Lasso Regression have worst performances in comparison to the simple Average Model. This shows a non linear behavior in our dataset, hence the use of more complex models, such as Random Forest, XGBoost and Light GBM. </p>
 
-<p align="justify"> <b> The LGBM model was chosen for hyperparameter tuning, since it has the lowest RMSE. Even if we look into other metrics, such as MAPE (on which Random Forest has the best performance), LGBM would still be better to use, because it's much faster to train and tune </b>. </p>
+<p align="justify"> <b> The LGBM model was chosen for Hyperparameter Tuning, since it has the lowest RMSE. Even if we look into other metrics, such as MAPE (on which Random Forest has the best performance), LGBM would still be better to use, because it's much faster to train and tune </b>. </p>
 
 After tuning LGBM's hyperparameters using <a href="https://towardsdatascience.com/hyper-parameter-tuning-in-python-1923797f124f">Random Search</a> the model performance has improved: 
 
@@ -172,10 +180,9 @@ After tuning LGBM's hyperparameters using <a href="https://towardsdatascience.co
 Both MAE and MAPE are really useful in explaining the model's business performance. MAE shows how much the model prediction is wrong on average, while MAPE shows how much the model prediction is wrong on average percentage-wise. </i> </p>
 
 
-
 ## 6.1. Brief Financial Results:
 
-<p align="justify"> Below there are displayed two tables with brief financial results given by the LGBM model, as the complete financial results will be explained in the next section (7. Model Deployment). </p>
+<p align="justify"> Below there are displayed two tables with brief financial results given by the LGBM model, as the complete financial results will be explained in the next section (<a href="https://github.com/brunodifranco/project-rossmann-sales#7-model-deployment">7. <b> Model Deployment </b> </a>). </p>
 
 <p align="justify"> A couple interesting metrics to evaluate the financial performance for this solution (<b>LGBM Model</b>) is the MAE and MAPE. Below there's a table with a few stores metrics: </p>
 <div align="center">
@@ -214,22 +221,10 @@ To link to chat with the Rossmann Bot is [![image](https://img.shields.io/badge/
 
 </p>
 
-
-
-
-
-
-
-
-
-
 # 8. **Conclusion**
-In this project the two main objectives were accomplished:
+In this project the main objective was accomplished:
 
- - A feasible solution was found for both business problems, leading to profitable results.
- - Five interesting and useful insights were found through Exploratory Data Analysis (EDA).
-
- We also managed to deliver tables with in-depth financial results, as well as buy and sell suggestion tables. All this information can be filtered by using the [House Rocket Cloud App](https://brunodifranco-house-rocket-app-house-rocket-app-4dn0re.streamlitapp.com/), that also has the five business insights and a interactive Buy Suggestion Map.   
+ <p align="justify"> <b> A model that can provide good sales predictions for each store over the next six weeks was successfully trained and deployed in a Telegram Bot, which fulfilled CEO' s requirement, for now it's possible to determine the best resources allocation for each store renovation. </b> In addition to that, five interesting and useful insights were found through Exploratory Data Analysis (EDA), so that those can be properly used by Rossmann CEO. </p>
  
 # 9. **Next Steps**
 <p align="justify"> Further on, this solution could be improved by a few strategies:
@@ -237,9 +232,7 @@ In this project the two main objectives were accomplished:
  - Using <a href="https://towardsdatascience.com/an-introduction-to-time-series-analysis-with-arima-a8b9c9a961fb">ARIMA</a> to predict the amount of customers over the next six weeks, so that the customers column could be added to the final model. </p>
  
  - Tune even more the regression algorithm, by applying a <a href="https://machinelearningmastery.com/what-is-bayesian-optimization/">Bayesian Optimization</a> for instance. 
- 
-
- 
+  
  - Try other regression algorithms to predict the sales for each store.
  
  - Use different models for the stores on which it's more difficult (higher MAE and MAPE) to predict the sales
