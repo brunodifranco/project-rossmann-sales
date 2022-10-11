@@ -116,7 +116,7 @@ The data was collected from [Kaggle](https://www.kaggle.com/). This [dataset](ht
 
 
 
-<p align="justify"> This was the most fundamental part of this project, since it's in ML modeling where the sales predictions for each store can be made. Six models were trained, using time series cross-validation </p>
+<p align="justify"> This was the most fundamental part of this project, since it's in ML modeling where the sales predictions for each store can be made. Six models were trained, using time series cross-validation: </p>
 
 - Average Model (used as a baseline model)
 - Linear Regression
@@ -125,7 +125,7 @@ The data was collected from [Kaggle](https://www.kaggle.com/). This [dataset](ht
 - XGBoost Regressor
 - Light GBM Regressor
 
-The inital performance for all six algorithms are displayed below:
+The inital performance for all six algorithms are displayed below (sorted by RMSE):
 
 <div align="center">
 
@@ -146,11 +146,15 @@ The inital performance for all six algorithms are displayed below:
 
 After tuning LGBM's hyperparameters using <a href="https://towardsdatascience.com/hyper-parameter-tuning-in-python-1923797f124f">Random Search</a> the model performance has improved: 
 
+<div align="center">
+	
 | **Model Name** | **MAE** | **MAPE** | **RMSE** | **R<sup>2</sup>** |
 |:---:|:---:|:---:|:---:|:---:|
 | LGBM Regressor | 617.54000 | 0.08940 | 921.52000 | 0.90840 |
-		
-explicar as metricas
+
+</div>
+
+FAZER TABELA EM ITALICO COM Metrics definition:
 
 MAE (Mean Absolute Error): Shows how much the model prediction is wrong on average.
 
