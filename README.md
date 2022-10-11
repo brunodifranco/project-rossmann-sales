@@ -68,8 +68,6 @@ The data was collected from [Kaggle](https://www.kaggle.com/). This [dataset](ht
 - Model Evaluation
 - Financial Results
 - Model Deployment (Telegram Bot)
-
- [![image](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/rossmann_project_api_bot)
   
 ## 4.2. Tools and techniques used:
 - [Python 3.9.12](https://www.python.org/downloads/release/python-3912/), [Pandas](https://pandas.pydata.org/), [Matplotlib](https://matplotlib.org/), [Plotly](https://plotly.com/python/) and [Geopandas](https://geopandas.org/en/stable/).
@@ -86,31 +84,31 @@ The data was collected from [Kaggle](https://www.kaggle.com/). This [dataset](ht
 
  - ### 1st - Stores with basic assortment level are the ones that sell more.
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/66283452/194964237-f82c668c-3ea3-4373-b562-d18ab0a1f6f4.png" alt="drawing" width="750"/>
+  <img src="https://user-images.githubusercontent.com/66283452/194964237-f82c668c-3ea3-4373-b562-d18ab0a1f6f4.png" alt="drawing" width="800"/>
 </p>
 
 --- 
 - ### 2nd - Stores with higher number of close competitors sell more.
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/66283452/194964211-f1215de3-795c-4c2b-9d73-071b50a3cd96.png" alt="drawing" width="750"/>
+  <img src="https://user-images.githubusercontent.com/66283452/194964211-f1215de3-795c-4c2b-9d73-071b50a3cd96.png" alt="drawing" width="850"/>
 </p>
 
 ---
 - ### 3rd - Easter Holiday has the highest average sales, in comparison to other periods.
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/66283452/194964219-b73605bc-87f0-4b0e-9cf9-8026d32d49d5.png" alt="drawing" width="750"/>
+  <img src="https://user-images.githubusercontent.com/66283452/194964219-b73605bc-87f0-4b0e-9cf9-8026d32d49d5.png" alt="drawing" width="850"/>
 </p>
 
 ---
 - ### 4th - Stores sell less during the second semester of each year.
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/66283452/194964226-54bbb2b2-424e-4128-b958-b82ded2581d5.png" alt="drawing" width="750"/>
+  <img src="https://user-images.githubusercontent.com/66283452/194964226-54bbb2b2-424e-4128-b958-b82ded2581d5.png" alt="drawing" width="850"/>
 </p>
 
 ---
 - ### 5th - Stores Sell more after the 10th day of each month.
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/66283452/194964232-b28632ac-2e6d-4e5b-a302-1c5f2c533d3d.png" alt="drawing" width="750"/>
+  <img src="https://user-images.githubusercontent.com/66283452/194964232-b28632ac-2e6d-4e5b-a302-1c5f2c533d3d.png" alt="drawing" width="850"/>
 </p>
 
 # 6. **Machine Learning Models**
@@ -118,25 +116,99 @@ The data was collected from [Kaggle](https://www.kaggle.com/). This [dataset](ht
 
 
 
+<p align="justify"> This was the most fundamental part of this project, since it's in ML modeling where the sales predictions for each store can be made. Six models were trained, using time series cross-validation </p>
 
+- Average Model (used as a baseline model)
+- Linear Regression
+- Lasso Regression (Regularized Linear Regression)
+- Random Forest Regressor
+- XGBoost Regressor
+- Light GBM Regressor
 
-# 7. **Model Deployment and Financial Results**
-
-<p align="justify"> Three interesting metrics to evaluate the financial performance for this solution is the profit mean and median (grouped by ad_season, zipcode and ad_season with zipcode), as well as the total profit. This in-depth information can be found in <a href="https://github.com/brunodifranco/project-house-rocket-insights/tree/main/financial-results">here</a>. As for the profit for each property it can be checked in the <a href="https://brunodifranco-house-rocket-app-house-rocket-app-4dn0re.streamlitapp.com/">House Rocket Cloud App</a>, where filters can also be applied for better visualization. </p>
-
-<p align="justify"> <b> If this feasible solution strategy used in this project were applied by House Rocket the total obtained profit would be US$ 473,094,328.48, with an average profit of US$ 45,337.26 per property. The main profit metrics are displayed below: </b></p>
+The inital performance for all six algorithms are displayed below:
 
 <div align="center">
- 
-| **Metric** | **US$** |
-|---|---|
-| Total Profit | 473,094,328.48 |
-| Profit Mean | 45,337.26 |
-| Profit Median | 39,995.00 |
-| Min Profit | 8,217.50 |
-| Max Profit | 350,036.80 | 
+
+| **Model Name** | **MAE** | **MAPE** | **RMSE** | **R<sup>2</sup>** |
+|:---:|:---:|:---:|:---:|:---:|
+| LGBM Regressor | 833.23 +/- 121.0 | 0.1178 +/- 0.0093 | 1197.68 +/- 176.39 | 0.8467 +/- 0.0237 |
+| Random Forest Regressor | 838.84 +/- 219.91 | 0.1162 +/- 0.0233 | 1257.62 +/- 321.14 | 0.8409 +/- 0.0527 |
+| XGBoost Regressor | 900.29 +/- 152.53 | 0.1273 +/- 0.0155 | 1293.45 +/- 214.31 | 0.8322 +/- 0.0334 |
+| Average Model (Baseline) | 1354.8 | 0.2064 | 1835.14 | 0.6366 |
+| Linear Regression | 2081.72 +/- 295.57 | 0.3026 +/- 0.0166 | 2953.15 +/- 468.22 | 0.1353 +/- 0.0721 |
+| Lasso Regression | 2116.42 +/- 341.46 | 0.292 +/- 0.0118 | 3058.12 +/- 504.18 | 0.0742 +/- 0.0834 |
 
 </div>
+
+<p align="justify"> Both Linear Regression and Lasso Regression have worst performances in comparison to the simple Average Model. This shows a non linear behavior in our dataset, hence the use of more complex models, such as Random Forest, XGBoost and Light GBM. </p>
+
+<p align="justify"> <b> The LGBM model was chosen for hyperparameter tuning, since it has the lowest RMSE. Even if we look into other metrics, such as MAPE (on which Random Forest has the best performance), LGBM would still be better to use, because it's much faster to train and tune </b>. </p>
+
+After tuning LGBM's hyperparameters using <a href="https://towardsdatascience.com/hyper-parameter-tuning-in-python-1923797f124f">Random Search</a> the model performance has improved: 
+
+| **Model Name** | **MAE** | **MAPE** | **RMSE** | **R<sup>2</sup>** |
+|:---:|:---:|:---:|:---:|:---:|
+| LGBM Regressor | 617.54000 | 0.08940 | 921.52000 | 0.90840 |
+		
+explicar as metricas
+
+MAE (Mean Absolute Error): Shows how much the model prediction is wrong on average.
+
+MAPE(Mean Absolute Percentage Error): Shows how much the model prediction is wrong on average, in percentage.
+
+RMSE(Root Mean Square Error): 
+
+R<sup>2</sup> (Coefficient of Determination):
+
+## 6.1. Brief Financial Results:
+
+<p align="justify"> Below there are displayed two tables with brief financial results given by the LGBM model, as the complete financial results will be explained in the next section (7. Model Deployment). </p>
+
+<p align="justify"> A couple interesting metrics to evaluate the financial performance for this solution (<b>LGBM Model</b>) is the MAE and MAPE. Below there's a table with a few stores metrics: </p>
+<div align="center">
+
+| **Store** | **Predictions (€)** | **Worst Scenario (€)** | **Best Scenario (€)** | **MAE (€)** | **MAPE** |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 1 | 161,274.69 | 160,988.99 | 161,560.39 | 285.69937 | 0.06472 |
+| 2 | 175,549.76 | 175,192.06 | 175,907.47 | 357.70668 | 0.07338 |
+| 3 | 259,576.04 | 259,077.04 | 260,075.03 | 498.99756 | 0.07215 |
+| ... | ... | ... | ... | ... | ... |
+| 1113 | 238,353.17 | 237,841.04 | 238,865.30 | 512.12600 | 0.07852 |
+| 1114 | 769,997.75 | 767,598.11 | 772,397.39 | 2399.63754 | 0.10164 |
+| 1115 | 254,766.52 | 254,227.68 | 255,305.36 | 538.83848 | 0.07576 |
+</div>
+
+<p align="justify"> According to this model, the sales sum for all stores over the next six weeks is: </p>
+
+<div align="center">
+
+| **Scenario (€)** | **Total Sales of the Next 6 Weeks (€)** |
+|:---:|:---:|
+| Prediction  | 283,786,860.62 |
+| Worst Scenario | 283,094,186.26 |
+| Best Scenario | 284,479,534.97 |
+
+</div>
+
+# 7. **Model Deployment**
+
+<p align="justify">  As previously mentioned, the complete financial results can be consulted by using the Telegram Bot. The idea behind this is to facilite the access of any store sales prediction, as those can be checked from anywhere and from any eletronic device, as long as internet connection is available.  
+The bot will return you a sales prediction over the next six weeks for any available store, <b> all you have to do is send him the store number in this format "/store_number" (e.g. /12, /23, /41, etc) </b>. If a store number if non existent the message "Store not available" will be returned, and if you provide a text that isn't a number the bot will ask you to enter a valid store id. 
+
+To link to chat with the Rossmann Bot is [![image](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/rossmann_project_api_bot)
+
+<i> Because this deployment was made in a free cloud it could take a few minutes for the bot to respond, <b> in the first request. </b> In the following requests it should respond instantly. </i>
+
+</p>
+
+
+
+
+
+
+
+
+
 
 # 8. **Conclusion**
 In this project the two main objectives were accomplished:
@@ -148,9 +220,15 @@ In this project the two main objectives were accomplished:
  
 # 9. **Next Steps**
 <p align="justify"> Further on, this solution could be improved by a few strategies:
- - Using <a href="https://www.imsl.com/blog/what-is-regression-model">ARIMA</a> to predict the amount of customers over the next six weeks, so that the customers column could be added to the final model.  d. Another interesting study would be to produce a market research, so that data about clients could be collected. Then, a <a href="https://machinelearningmastery.com/clustering-algorithms-with-python/">clustering algorithm</a> </p>
- - Tune even more the regression algorithm, by applying a Bayesian Optimization for instance.
+
+ - Using <a href="https://towardsdatascience.com/an-introduction-to-time-series-analysis-with-arima-a8b9c9a961fb">ARIMA</a> to predict the amount of customers over the next six weeks, so that the customers column could be added to the final model. </p>
+ 
+ - Tune even more the regression algorithm, by applying a <a href="https://machinelearningmastery.com/what-is-bayesian-optimization/">Bayesian Optimization</a> for instance. 
+ 
+
+ 
  - Try other regression algorithms to predict the sales for each store.
+ 
  - Use different models for the stores on which it's more difficult (higher MAE and MAPE) to predict the sales
 
 # Contact
