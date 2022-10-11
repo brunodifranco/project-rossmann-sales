@@ -11,7 +11,7 @@
 
 This **Data Science** project is focused on solving one problem: 
 
-- ### **Rossmann CEO is requiring a sales prediction of the next six weeks for each store, in order to determine the best resources allocation for each store renovation.**
+- ### **Rossmann CEO is requiring a sales prediction of the next six weeks for each store, in order to determine the best resource allocation for each store renovation.**
 
 *The in-depth Python code explanation is available in [this](https://github.com/brunodifranco/project-house-rocket-insights/blob/main/jupyter-house-rocket.ipynb) Jupyter Notebook.*
 
@@ -146,7 +146,7 @@ The initial performance for all six algorithms are displayed below (sorted by RM
 
 </div>
 
-<p align="justify"> Both Linear Regression and Lasso Regression have worst performances in comparison to the simple Average Model. This shows a non linear behavior in our dataset, hence the use of more complex models, such as Random Forest, XGBoost and Light GBM. </p>
+<p align="justify"> Both Linear Regression and Lasso Regression have worst performances in comparison to the simple Average Model. This shows a nonlinear behavior in our dataset, hence the use of more complex models, such as Random Forest, XGBoost and Light GBM. </p>
 
 <p align="justify"> <b> The LGBM model was chosen for Hyperparameter Tuning, since it has the lowest RMSE. Even if we look into other metrics, such as MAPE (on which Random Forest has the best performance), LGBM would still be better to use, because it's much faster to train and tune </b>. </p>
 
@@ -182,7 +182,7 @@ Both MAE and MAPE are really useful in explaining the model's business performan
 
 <p align="justify"> Below there are displayed two tables with brief financial results given by the LGBM model, as the complete financial results will be explained in the next <a href="https://github.com/brunodifranco/project-rossmann-sales#7-model-deployment"> section </a>. </p>
 
-<p align="justify"> A couple interesting metrics to evaluate the financial performance for this solution (<b>LGBM Model</b>) is the MAE and MAPE. Below there's a table with a few stores metrics: </p>
+<p align="justify"> A couple interesting metrics to evaluate the financial performance of this solution (<b>LGBM Model</b>) is the MAE and MAPE. Below there's a table with a few stores metrics: </p>
 <div align="center">
 
 | **Store** | **Predictions (€)** | **Worst Scenario (€)** | **Best Scenario (€)** | **MAE (€)** | **MAPE** |
@@ -210,7 +210,7 @@ Both MAE and MAPE are really useful in explaining the model's business performan
 
 # 7. **Model Deployment**
 
-<p align="justify">  As previously mentioned, the complete financial results can be consulted by using the Telegram Bot. The idea behind this is to facilite the access of any store sales prediction, as those can be checked from anywhere and from any eletronic device, as long as internet connection is available.  
+<p align="justify">  As previously mentioned, the complete financial results can be consulted by using the Telegram Bot. The idea behind this is to facilitate the access of any store sales prediction, as those can be checked from anywhere and from any electronic device, as long as internet connection is available.  
 The bot will return you a sales prediction over the next six weeks for any available store, <b> all you have to do is send him the store number in this format "/store_number" (e.g. /12, /23, /41, etc) </b>. If a store number if non existent the message "Store not available" will be returned, and if you provide a text that isn't a number the bot will ask you to enter a valid store id. 
 
 To link to chat with the Rossmann Bot is [![image](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/rossmann_project_api_bot)
@@ -222,7 +222,7 @@ To link to chat with the Rossmann Bot is [![image](https://img.shields.io/badge/
 # 8. **Conclusion**
 In this project the main objective was accomplished:
 
- <p align="justify"> <b> A model that can provide good sales predictions for each store over the next six weeks was successfully trained and deployed in a Telegram Bot, which fulfilled CEO' s requirement, for now it's possible to determine the best resources allocation for each store renovation. </b> In addition to that, five interesting and useful insights were found through Exploratory Data Analysis (EDA), so that those can be properly used by Rossmann CEO. </p>
+ <p align="justify"> <b> A model that can provide good sales predictions for each store over the next six weeks was successfully trained and deployed in a Telegram Bot, which fulfilled CEO' s requirement, for now it's possible to determine the best resource allocation for each store renovation. </b> In addition to that, five interesting and useful insights were found through Exploratory Data Analysis (EDA), so that those can be properly used by Rossmann CEO. </p>
  
 # 9. **Next Steps**
 <p align="justify"> Further on, this solution could be improved by a few strategies:
@@ -233,7 +233,7 @@ In this project the main objective was accomplished:
   
  - Try other regression algorithms to predict the sales for each store.
  
- - Use different models for the stores on which it's more difficult (higher MAE and MAPE) to predict the sales
+ - Use different models for the stores on which it's more difficult (higher MAE and MAPE) to predict the sales.
 
 # Contact
 
