@@ -125,7 +125,7 @@ The data was collected from [Kaggle](https://www.kaggle.com/). This [dataset](ht
 - XGBoost Regressor
 - Light GBM Regressor
 
-The inital performance for all six algorithms are displayed below (sorted by RMSE):
+The initial performance for all six algorithms are displayed below (sorted by RMSE):
 
 <div align="center">
 
@@ -151,18 +151,27 @@ After tuning LGBM's hyperparameters using <a href="https://towardsdatascience.co
 | **Model Name** | **MAE** | **MAPE** | **RMSE** | **R<sup>2</sup>** |
 |:---:|:---:|:---:|:---:|:---:|
 | LGBM Regressor | 617.54000 | 0.08940 | 921.52000 | 0.90840 |
+	
+</div>
+
+## <i>Metrics Definition and Interpretation</i>
+
+<div align="center">
+
+| **_Metric_** | **_Definition_** |
+|:---:|:---:|
+| _MAE_ | _Mean Absolute Error_ |
+| _MAPE_ | _Mean Absolute Percentage Error_ |
+| _RMSE_ | _Root Mean Squared Error_ |
+| _R<sup>2</sup>_ | _Coefficient of Determination_ |
 
 </div>
 
-FAZER TABELA EM ITALICO COM Metrics definition:
+<p align="justify"> <i> R<sup>2</sup> basically show how well the sales are being predicted by the model, and alongside RMSE isn't the best metric to translate into financial performance, despite being key to check statistical performance. 
 
-MAE (Mean Absolute Error): Shows how much the model prediction is wrong on average.
+Both MAE and MAPE are really useful in explaining the model's business performance. MAE shows how much the model prediction is wrong on average, while MAPE shows how much the model prediction is wrong on average percentage-wise. </i> </p>
 
-MAPE(Mean Absolute Percentage Error): Shows how much the model prediction is wrong on average, in percentage.
 
-RMSE(Root Mean Square Error): 
-
-R<sup>2</sup> (Coefficient of Determination):
 
 ## 6.1. Brief Financial Results:
 
