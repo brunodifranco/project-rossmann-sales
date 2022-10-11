@@ -180,7 +180,7 @@ Both MAE and MAPE are really useful in explaining the model's business performan
 
 ## 6.1. Brief Financial Results:
 
-<p align="justify"> Below there are displayed two tables with brief financial results given by the LGBM model, as the complete financial results will be explained in the next section (<a href="https://github.com/brunodifranco/project-rossmann-sales#7-model-deployment">7. <b> Model Deployment </b> </a>). </p>
+<p align="justify"> Below there are displayed two tables with brief financial results given by the LGBM model, as the complete financial results will be explained in the next <a href="https://github.com/brunodifranco/project-rossmann-sales#7-model-deployment"> section </a>. </p>
 
 <p align="justify"> A couple interesting metrics to evaluate the financial performance for this solution (<b>LGBM Model</b>) is the MAE and MAPE. Below there's a table with a few stores metrics: </p>
 <div align="center">
