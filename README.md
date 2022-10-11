@@ -7,7 +7,7 @@
 </p>
 
 # 1. **Rossmann and Business Problem**
-<p align="justify"> House Rocket is a real estate company whose business model consists in identifying good deals, so that those properties could be bought for an interesting price and futurely sold for a higher price, therefore the company could turn in a profit. For this particular instance, House Rocket will operate in King County, which includes Seattle. </p>
+<p align="justify"> Rossmann is one of the largest drug store chains in Europe, with operations in Germany, Poland, Hungary, Czech Republic, Turkey, Albania, Kosovo and Spain. Their sales can be influenced by promotions, competition, school and state holidays, seasonality, locality, etc.</p>
 
 *Obs: The business problem is fictitious, although both company and data are real.*
 
@@ -119,6 +119,7 @@ The data was collected from [Kaggle](https://www.kaggle.com/). This [dataset](ht
 
 
 
+
 # 7. **Model Deployment and Financial Results**
 
 <p align="justify"> Three interesting metrics to evaluate the financial performance for this solution is the profit mean and median (grouped by ad_season, zipcode and ad_season with zipcode), as well as the total profit. This in-depth information can be found in <a href="https://github.com/brunodifranco/project-house-rocket-insights/tree/main/financial-results">here</a>. As for the profit for each property it can be checked in the <a href="https://brunodifranco-house-rocket-app-house-rocket-app-4dn0re.streamlitapp.com/">House Rocket Cloud App</a>, where filters can also be applied for better visualization. </p>
@@ -146,7 +147,11 @@ In this project the two main objectives were accomplished:
  We also managed to deliver tables with in-depth financial results, as well as buy and sell suggestion tables. All this information can be filtered by using the [House Rocket Cloud App](https://brunodifranco-house-rocket-app-house-rocket-app-4dn0re.streamlitapp.com/), that also has the five business insights and a interactive Buy Suggestion Map.   
  
 # 9. **Next Steps**
-<p align="justify"> Further on, this solution could be improved by using <a href="https://www.imsl.com/blog/what-is-regression-model">regression models</a> to determine wheter a property has a good buying price, and for which price it could be bought and sold. Another interesting study would be to produce a market research, so that data about clients could be collected. Then, a <a href="https://machinelearningmastery.com/clustering-algorithms-with-python/">clustering algorithm</a> could be applied to identify what types of property features each group of customers would prefer. </p>
+<p align="justify"> Further on, this solution could be improved by a few strategies:
+ - Using <a href="https://www.imsl.com/blog/what-is-regression-model">ARIMA</a> to predict the amount of customers over the next six weeks, so that the customers column could be added to the final model.  d. Another interesting study would be to produce a market research, so that data about clients could be collected. Then, a <a href="https://machinelearningmastery.com/clustering-algorithms-with-python/">clustering algorithm</a> </p>
+ - Tune even more the regression algorithm, by applying a Bayesian Optimization for instance.
+ - Try other regression algorithms to predict the sales for each store.
+ - Use different models for the stores on which it's more difficult (higher MAE and MAPE) to predict the sales
 
 # Contact
 
