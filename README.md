@@ -13,7 +13,7 @@ This **Data Science** project is focused on solving one problem:
 
 - ### **Rossmann CEO is requiring a sales prediction of the next six weeks for each store, in order to determine the best resource allocation for each store renovation.**
 
-*The in-depth Python code explanation is available in [this](https://github.com/brunodifranco/project-house-rocket-insights/blob/main/jupyter-house-rocket.ipynb) Jupyter Notebook.*
+*The in-depth Python code explanation is available in [this](https://github.com/brunodifranco/project-rossmann-sales/blob/main/rossmann.ipynb) Jupyter Notebook.*
 
 # 2. **Data Overview**
 The data was collected from [Kaggle](https://www.kaggle.com/). This [dataset](https://www.kaggle.com/competitions/rossmann-store-sales/data) contains historical sales data for 1,115 Rossmann stores. The initial features descriptions are available below:
