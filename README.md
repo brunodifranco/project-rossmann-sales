@@ -177,7 +177,6 @@ After tuning LGBM's hyperparameters using <a href="https://towardsdatascience.co
 
 Both MAE and MAPE are really useful in explaining the model's business performance. MAE shows how much the model prediction is wrong on average, while MAPE shows how much the model prediction is wrong on average percentage-wise. </i> </p>
 
-
 ## 6.1. Brief Financial Results:
 
 <p align="justify"> Below there are displayed two tables with brief financial results given by the LGBM model, as the complete financial results will be explained in the next <a href="https://github.com/brunodifranco/project-rossmann-sales#7-model-deployment"> section </a>. </p>
