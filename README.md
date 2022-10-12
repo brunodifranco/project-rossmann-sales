@@ -214,7 +214,7 @@ The bot will return you a sales prediction over the next six weeks for any avail
 
 To link to chat with the Rossmann Bot is [![image](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/rossmann_project_api_bot)
 
-<i> Because this deployment was made in a free cloud it could take a few minutes for the bot to respond, <b> in the first request. </b> In the following requests it should respond instantly. </i>
+<i> Because this deployment was made in a free cloud (Render) it could take a few minutes for the bot to respond, <b> in the first request. </b> In the following requests it should respond instantly. </i>
 
 </p>
 
