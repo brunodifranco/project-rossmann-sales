@@ -70,7 +70,7 @@ The data was collected from [Kaggle](https://www.kaggle.com/). This [dataset](ht
 
 - <b> Feature Selection </b>: Selecting the best features to use in the ML model by applying the <a href="https://www.section.io/engineering-education/getting-started-with-boruta-algorithm/">Boruta Algorithm</a>. 
 
-- <p align="justify"> <b> Machine Learning Modeling </b>: Training Regression Algorithms, using time series cross-validation. The best model was selected to be improved via Hyperparameter Tuning. More information at <a href="https://github.com/brunodifranco/project-rossmann-sales#6-machine-learning-models">Section 6 </a>. </p>
+- <p align="justify"> <b> Machine Learning Modeling </b>: Training Regression Algorithms with time series cross-validation. The best model was selected to be improved via Hyperparameter Tuning. More information at <a href="https://github.com/brunodifranco/project-rossmann-sales#6-machine-learning-models">Section 6 </a>. </p>
 
 - <b> Model Evaluation </b>: Evaluating the model using four metrics: MAE, MAPE, RMSE and R<sup>2</sup>. 
 
@@ -122,7 +122,7 @@ The data was collected from [Kaggle](https://www.kaggle.com/). This [dataset](ht
 
 # 6. **Machine Learning Models**
 
-<p align="justify"> This was the most fundamental part of this project, since it's in ML modeling where the sales predictions for each store can be made. Six models were trained, using time series cross-validation: </p>
+<p align="justify"> This was the most fundamental part of this project, since it's in ML modeling where the sales predictions for each store can be made. Six models were trained using time series cross-validation: </p>
 
 - Average Model (used as a baseline model)
 - Linear Regression
