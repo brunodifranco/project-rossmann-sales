@@ -62,9 +62,9 @@ The data was collected from [Kaggle](https://www.kaggle.com/). This [dataset](ht
 
 - <b> Data Cleaning </b>: Renaming columns, changing data types and filling NaN's. 
 
-- <p align="justify"> <b> Exploratory Data Analysis (EDA) </b>: Exploring the data in order to obtain business experience, look for useful business insights and find important features for the ML model. The top business insights found are available in <a href="https://github.com/brunodifranco/project-rossmann-sales#5-top-business-insights"> Section 5 </a>. </p>
-
 - <b> Feature Engineering </b>: Creating new features from the original ones, so that those could be used in the ML model. 
+
+- <p align="justify"> <b> Exploratory Data Analysis (EDA) </b>: Exploring the data in order to obtain business experience, look for useful business insights and find important features for the ML model. The top business insights found are available in <a href="https://github.com/brunodifranco/project-rossmann-sales#5-top-business-insights"> Section 5 </a>. </p>
 
 - <b> Data Preparation </b>: Applying <a href="https://www.atoti.io/articles/when-to-perform-a-feature-scaling/">Normalization and Rescaling Techniques</a> in the data, as well as <a href="https://www.geeksforgeeks.org/feature-encoding-techniques-machine-learning/">Enconding Methods</a> and Response Variable Transformation.
 
