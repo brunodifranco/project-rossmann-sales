@@ -4,16 +4,16 @@
   <img src="https://user-images.githubusercontent.com/66283452/195202224-01bfd468-9f1c-4e83-af60-b101312a98e3.svg" alt="drawing" width="800"/>
 </p>
 
+*Obs: The business problem is fictitious, although both company and data are real.*
+
+*The in-depth Python code explanation is available in [this](https://github.com/brunodifranco/project-rossmann-sales/blob/main/rossmann.ipynb) Jupyter Notebook.*
+
 # 1. **Rossmann and Business Problem**
 <p align="justify"> Rossmann is one of the largest drug store chains in Europe, with operations in Germany, Poland, Hungary, the Czech Republic, Turkey, Albania, Kosovo and Spain. Their sales can be influenced by promotions, competition, school and state holidays, seasonality, locality, etc.</p>
-
-*Obs: The business problem is fictitious, although both company and data are real.*
 
 This **Data Science** project is focused on solving one problem: 
 
 - ### **Rossmann CEO is requiring a sales prediction of the next six weeks for each store, in order to determine the best resource allocation for each store renovation.**
-
-*The in-depth Python code explanation is available in [this](https://github.com/brunodifranco/project-rossmann-sales/blob/main/rossmann.ipynb) Jupyter Notebook.*
 
 # 2. **Data Overview**
 The data was collected from [Kaggle](https://www.kaggle.com/). This [dataset](https://www.kaggle.com/competitions/rossmann-store-sales/data) contains historical sales data for 1,115 Rossmann stores. The initial features descriptions are available below:
