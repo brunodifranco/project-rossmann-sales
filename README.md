@@ -1,4 +1,6 @@
-<h1 align="center"> Creating a bot that predicts Rossmann future sales</h1>
+<h1 align="center"> Creating a Bot that Predicts Rossmann Future Sales</h1>
+
+<p align="center">A Regression Project</p>
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/66283452/195202224-01bfd468-9f1c-4e83-af60-b101312a98e3.svg" alt="drawing" width="800"/>
