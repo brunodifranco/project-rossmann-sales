@@ -3,7 +3,7 @@
 <p align="center">A Regression Project</p>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/66283452/195202224-01bfd468-9f1c-4e83-af60-b101312a98e3.svg" alt="drawing" width="800"/>
+  <img src="https://user-images.githubusercontent.com/66283452/195202224-01bfd468-9f1c-4e83-af60-b101312a98e3.svg" alt="drawing" width="700"/>
 </p>
 
 *Obs: The business problem is fictitious, although both company and data are real.*
